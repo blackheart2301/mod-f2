@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Student Management System</h1>
+
+  <h2>List of Students</h2>
+  <table id="studentsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Degree</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="studentsList">
+      <!-- Student profiles will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <h2>Add/Edit Student</h2>
+  <form id="studentForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" required>
+
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" required>
+
+    <label for="degree">Degree:</label>
+    <input type="text" id="degree" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <button type="submit" id="submitButton">Add Student</button>
+  </form>
+
+  <h2>Search Students</h2>
+  <input type="text" id="searchBox" placeholder="Search by name, email, or degree">
+
+  <script src="script.js"></script>
+</body>
+</html>
